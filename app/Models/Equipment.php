@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Equipment extends Model
 {
-    protected $table = 'equipment';
+    protected $table = 'equipments';
     protected $primaryKey = 'id';
     public $timestamps = false;
 

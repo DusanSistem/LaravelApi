@@ -6,19 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee extends Model
 {
-    protected $table = 'employee';
+    protected $table = 'employees';
     protected $primaryKey = 'id';
     public $timestamps = false;
 
     protected $fillable = [
         'id',
-        'first_name',
-        'last_name'
+        'name',
+        'surname'
     ];
     protected $casts = [
         'id' => 'int',
-        'first_name' => 'string',
-        'last_name' => 'string',
+        'name' => 'string',
+        'surname' => 'string',
     ];
 
 }

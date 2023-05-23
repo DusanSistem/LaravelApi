@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Keyboard extends Model
 {
-    protected $table = 'keyboard';
+    protected $table = 'keyboards';
     protected $primaryKey = 'id';
     public $timestamps = false;
 

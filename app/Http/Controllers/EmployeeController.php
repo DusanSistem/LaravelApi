@@ -12,7 +12,7 @@ class EmployeeController extends Controller
     public function index()
     {
         $employees = Employee::all();
-        return response()->json($employees);
+        return response()->json($employees,200);
     }
 
     /**
@@ -42,7 +42,7 @@ class EmployeeController extends Controller
         if (!$employee) {
             return response()->json(['message' => 'Employee not found'], 404);
         }
-        return response()->json($employee);
+        return response()->json($employee,200);
     }
 
 
