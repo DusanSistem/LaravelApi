@@ -5,6 +5,7 @@ use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\KeyboardController;
 use App\Http\Controllers\MouseController;
 use App\Http\Controllers\PcController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -52,4 +53,9 @@ Route::get('/pcs/{id}', [PcController::class, 'show']);
 Route::post('/pcs', [PcController::class, 'store']);
 Route::post('/pcs/{id}', [PcController::class, 'update']);
 Route::delete('/pcs/{id}', [PcController::class, 'destroy']);
+
+Route::post('/login', [UserController::class, 'login']);
+Route::post('/logout', [UserController::class, 'logout']);
+
+
 
